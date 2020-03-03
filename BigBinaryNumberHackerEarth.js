@@ -1,3 +1,10 @@
+// First construct concatenated digit using binary representations of 1 to n numbers.
+// Suppose n = 2. The we have concatenated binary digit = bin(1) || bin(2) = 1 || 10.
+// Convert this number to base 10 assuming LSB on right.
+// In this case, converted digit = 6 in base 10.
+// Let this number be k. Task is to find k modulo 10^9 + 7.
+// n can be as big as 10^9.
+
 (function main() {
     function num(n){
         var mod = 1000000007;

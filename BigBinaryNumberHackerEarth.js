@@ -14,12 +14,12 @@
         var ans=1;
         var pow = 1;
         for(var i=2;i<=n;i++) {
-            var length = (Math.floor(Math.log2(i))+1);
-            pow = Math.pow(2,length);
+            var length = (Math.floor(Math.log2(i))+1)%mod;
+            pow = Math.pow(2,length)%mod;
             ans = (((ans%mod)*(pow)%mod) + i)%mod;
         }
         console.log(ans);
         return ans;
     }
-    num(5);
+    num(100000000);
 }());
